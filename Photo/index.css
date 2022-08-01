@@ -1,0 +1,29 @@
+body{
+    background:url('./imgs/bg.jpg');
+}
+div.container{
+    widows: 100%;
+    position: relative;
+    margin: 0 auto; 
+}
+div.container img{/*小图*/
+    width: 17.5%;                
+    border: 10px solid #FFF;
+    box-shadow: 0 0 3px #000;
+}
+div.container img.show{	/*大图*/
+    width: 98%;                
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 10px solid #FFF;
+    box-shadow: 0 0 3px #000;
+}
+
+
+/* div.container img:hover{
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+} */
