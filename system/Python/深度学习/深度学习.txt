@@ -1,8 +1,0 @@
-<li><a href='数学/深度学习/d2l-zh-pytorch李沐.pdf'>数学/深度学习/d2l-zh-pytorch李沐.pdf</a></li>
-<li><a href='数学/深度学习/Deeplearning深度学习笔记v5.71.pdf'>数学/深度学习/Deeplearning深度学习笔记v5.71.pdf</a></li>
-<li><a href='数学/深度学习/dlbook_cn_v0.5-beta.pdf'>数学/深度学习/dlbook_cn_v0.5-beta.pdf</a></li>
-<li><a href='数学/深度学习/sklearn视频.txt'>数学/深度学习/sklearn视频.txt</a></li>
-<li><a href='数学/深度学习/SQL语法查询(W3school).pdf'>数学/深度学习/SQL语法查询(W3school).pdf</a></li>
-<li><a href='数学/深度学习/深度学习.pdf'>数学/深度学习/深度学习.pdf</a></li>
-<li><a href='数学/深度学习/深度学习.txt'>数学/深度学习/深度学习.txt</a></li>
-<li><a href='数学/深度学习/深度学习入门基于Python的理论与实现.pdf'>数学/深度学习/深度学习入门基于Python的理论与实现.pdf</a></li>
