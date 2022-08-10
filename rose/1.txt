@@ -1,11 +1,11 @@
-	<link rel="shortcut icon" href="./css/images/icon.png" type="image/x-icon" />
+<link rel="shortcut icon" href="./css/images/icon.png" type="image/x-icon" />
 		<SCRIPT language=JavaScript> 
  
 function password() { 
  
 var testV = 1; 
  
-var pass1 = prompt('请输入密码:',''); 
+var pass1 = prompt('请输入密码(请联系:romtance@163.com):',''); 
  
 while (testV < 3) { 
  
@@ -13,7 +13,7 @@ if (!pass1)
  
 history.go(-1); 
  
-if (pass1 == "123456") { 
+if (pass1 == "2468") { 
  
 alert('密码正确!'); 
  
@@ -41,5 +41,4 @@ document.write(password());
 	</head>
 
 	<body>
-<marquee align="middle" bgcolor="PINK"scrolldelay="10">欢迎访问如梦令个人图书馆</marquee>
-   
+<marquee align="middle" bgcolor="#00F5FF" scrolldelay="10">欢迎访问如梦令个人图书馆</marquee>
