@@ -1,0 +1,2395 @@
+
+/*banner样式style*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground demo */
+
+* { 
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}*/
+
+.main-two{
+	width: 100%;
+	height: 500px;
+  background: #63a1d7;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-two-intro {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+}
+.main-two-intro h1 {
+  text-transform: uppercase;
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.main-two-intro h1::after {
+  content: '';
+  width: 80px;
+  display: block;
+  background: #fff;
+  height: 5px;
+  margin: 30px auto;
+  line-height: 1.1;
+}
+.main-two-intro p {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+       -o-transition: all 0.4s;
+          transition: all 0.4s;
+}
+.btn:hover {
+  color: #005544;
+  border-color: #005544;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-two-intro h1  {
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-two-intro h1  {
+    font-size: 48px;
+  }
+  .main-two-intro h1 ::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+	.main-two{
+		height: 300px;
+	}
+  .main-two-intro {
+    padding: 0 10px;
+  }
+  .main-two-intro h1  {
+    font-size: 30px;
+  }
+  .main-two-intro h1 ::after {
+    height: 6px;
+  }
+  .main-two-intro p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main-two-intro h1{
+    font-size: 28px;
+  }
+  .main-two-intro h1::after {
+    height: 4px;
+  }
+}
+/*主样式*/
+* {
+    margin: 0;
+    padding: 0;
+    /*text-decoration: none;*/
+    list-style: none;
+    outline: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+body {
+    font-size: 1em;
+}
+
+html {
+    font-size: 100%;
+}
+
+.bigPicture {
+    width: 100%;
+    background-color: #eff4f7;
+    height: 350px;
+    position: relative;
+}
+
+.bigPicture img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+.pre-header {
+    position: relative;
+    width: 100%;
+    background-color: #293237;
+}
+
+.pre-header ul {
+    width: 60%;
+    float: left;
+}
+
+.pre-header ul li {
+    width: 15%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.pre-header ul li:hover {
+    background-color: #333b3f;
+    box-shadow: 0px 0px 2px #000000 inset;
+    text-decoration: none;
+}
+
+.pre-header ul li a {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pre-header ul li a span {
+    font-size: 1em;
+    font-family: "瀹嬩綋";
+}
+
+.pre-header ul li a i {
+    vertical-align: middle;
+    font-size: 0.5em;
+    color: #1aaeea;
+    display: inline-block;
+    width: 10px;
+
+    margin-right: 4px;
+}
+
+.pre-header .search2 {
+    width: 15%;
+    float: right;
+    margin-top: 14px;
+    height: 22px;
+}
+
+.pre-header .search2 .searchtext {
+    width: 80%;
+    height: 18px;
+    border: none;
+    text-indent: 0.5em;
+    line-height: 22px;
+    float: left;
+    background-color: #3a4348;
+    color: #FFF;
+}
+
+.pre-header .search2 .submit2 {
+    width: 15%;
+    background-color: #FFFFFF;
+    border: none;
+    height: 18px;
+    float: left;
+    background-color: #3a4348;
+    line-height: 18px;
+    color: #859fb8;
+    font-size: 0.625em;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    background-color: #2f383d;
+    padding-top: 14px;
+}
+
+.header .logo {
+    width: 19%;
+    margin: 0 auto;
+}
+
+.header .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav {
+    width: 100%;
+    float: right;
+
+    margin-top: 20px;
+}
+
+.header .nav .dropdown {
+    width: 12.5%;
+    float: left;
+
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.header .nav .dropdown:hover {
+    background-color: #e3f6fe;
+}
+
+.header .nav .dropdown:hover span {
+    color: #297096;
+}
+
+.header .nav .dropdown:hover .dropdown-content {
+    visibility: visible;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    transform: rotate3d(0, 0, 0, 0);
+    -webkit-transform: rotate3d(0, 0, 0, 0);
+    -moz-transform: rotate3d(0, 0, 0, 0);
+    -ms-transform: rotate3d(0, 0, 0, 0);
+    -o-transform: rotate3d(0, 0, 0, 0);
+}
+
+.header .nav .dropdown > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #b1cbda;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 50px;
+    height: 50px;
+}
+
+.header .nav .dropdown > a > span {
+    display: inline-block;
+    width: 98%;
+    float: left;
+    text-align: center;
+    font-family: "寰蒋闆呴粦";
+
+}
+
+.header .nav .dropdown > a > span:after {
+    content: '';
+    display: inline-block;
+    border-right: 2px solid #aac4d2;
+    border-bottom: 2px solid #aac4d2;
+    border-left: 2px solid transparent;
+    border-top: 2px solid transparent;
+    margin-left: 2px;
+}
+
+.dropdown-content {
+    background: #fff;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    visibility: hidden;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    transform: rotate3d(1, 0, 0, -90deg);
+    -webkit-transform: rotate3d(1, 0, 0, -90deg);
+    -moz-transform: rotate3d(1, 0, 0, -90deg);
+    -ms-transform: rotate3d(1, 0, 0, -90deg);
+    -o-transform: rotate3d(1, 0, 0, -90deg);
+    -webkit-transform-origin: 0 0 0;
+    -moz-transform-origin: 0 0 0;
+    transform-origin: 0 0 0;
+    text-align: center;
+}
+
+.dropdown-content li {
+    float: left;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #FFFFFF;
+    font-family: "寰蒋闆呴粦";
+    font-size: 10px;
+    color: #02628d;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.dropdown-content li > a {
+    color: #02628d;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+
+}
+
+.dropdown-content li:hover a {
+    color: #FFFFFF;
+
+}
+
+.dropdown-content li:hover {
+    background-color: #0072a6;
+}
+
+.main-news {
+    padding: 40px 0;
+    background-color: #eff4f7;
+}
+
+.main-news .college_news {
+    width: 46%;
+    border: 1px solid #e2e5e7;
+    box-shadow: 0px 0px 10px #e5e8eb;
+    -webkit-box-shadow: 0px 0px 10px #e5e8eb;
+    -moz-box-shadow: 0px 0px 10px #e5e8eb;
+    background-color: #FFFFFF;
+    float: left;
+    overflow: hidden;
+    height: 520px;
+}
+
+.college_news .college_news_title {
+    width: 90%;
+    padding-left: 3%;
+    margin-right: 5%;
+    height: 61px;
+    border-bottom: 2px solid #0a8fc8;
+    color: #0A8FC8;
+    margin-bottom: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.college_news .college_news_title h2 {
+    font-family: "寰蒋闆呴粦";
+    font-size: 1.68em;
+    border-bottom: 4px solid #0a8fc8;
+    width: 36%;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+}
+
+.college_news_content_img a {
+    display: block;
+}
+
+.college_news .college_news_title .more {
+    float: right;
+    display: block;
+    color: #656565;
+    font-size: 0.75em;
+    font-family: "寰蒋闆呴粦";
+    height: 60px;
+    line-height: 60px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    margin-right: 4%;
+}
+
+.college_news .college_news_title .more:hover {
+    transform: translate(10%, 0);
+    -o-transform: translate(10%, 0);
+    -ms-transform: translate(10%, 0);
+    -moz-transform: translate(10%, 0);
+    -webkit-transform: translate(10%, 0);
+}
+
+.college_news .college_news_title a:hover {
+    text-decoration: none;
+}
+
+.college_news .college_news_title .more i {
+    font-weight: bolder;
+}
+
+.college_news .college_news_content {
+    width: 90%;
+    padding: 22px 3% 25px 6%;
+    border-bottom: 2px dotted #000000;
+}
+
+.college_news .college_news_content .college_news_content_img {
+    width: 50%;
+    margin-right: 4%;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+.college_news .college_news_content .college_news_content_img::after {
+    position: absolute;
+    content: '';
+    border-right: 30px solid #FFFFFF;
+    border-top: 20px solid #FFFFFF;
+    border-left: 30px solid transparent;
+    border-bottom: 20px solid transparent;
+    top: 0;
+    right: 0;
+}
+
+.college_news .college_news_content .college_news_content_img img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.college_news .college_news_content .college_news_content_img img:hover {
+    transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+}
+
+.college_news .college_news_content .college_news_content_text {
+    width: 45%;
+    float: left;
+}
+
+.college_news .college_news_content .college_news_content_text h2 a {
+    font-family: "寰蒋闆呴粦";
+    font-size: 20px;
+    color: #0a8fc8;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.college_news .college_news_content .college_news_content_text h2 a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.college_news .college_news_content .college_news_content_text p {
+    font-family: "寰蒋闆呴粦";
+    font-size: 12px;
+    color: #656565;
+    height: 4.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 40px;
+}
+
+.college_news .college_news_ul {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.college_news .college_news_ul li {
+    width: 100%;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.college_news .college_news_ul li a {
+    color: #000000;
+    display: block;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.college_news .college_news_ul li a:hover {
+    color: #9E0003;
+    font-weight: bolder;
+}
+
+.college_news .college_news_ul li a h5 {
+    font-size: 1.2em;
+    width: 74%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: left;
+    font-weight: bolder;
+}
+
+.college_news .college_news_ul li a span {
+    float: right;
+    font-size: 0.9 m;
+    color: #656565;
+    display: block;
+}
+
+.main-news .notice {
+    float: right;
+    width: 46%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #e5e8eb;
+    -webkit-box-shadow: 0px 0px 10px #e5e8eb;
+    -moz-box-shadow: 0px 0px 10px #e5e8eb;
+    height: 515px;
+}
+
+.notice .notice_title {
+    width: 90%;
+    padding-left: 3%;
+    margin-right: 5%;
+    height: 61px;
+    border-bottom: 2px solid #0a8fc8;
+    color: #0A8FC8;
+    margin-bottom: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice .notice_title h2 {
+    font-size: 1.68em;
+    width: 34%;
+    height: 60px;
+    border-bottom: 4px solid #0A8FC8;
+    color: #0A8FC8;
+    line-height: 65px;
+    font-family: "寰蒋闆呴粦";
+    float: left;
+}
+
+.notice .notice_title .more {
+    float: right;
+    display: block;
+    color: #656565;
+    font-size: 0.75em;
+    font-family: "寰蒋闆呴粦";
+    height: 60px;
+    line-height: 60px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    margin-right: 4%;
+}
+
+.notice .notice_title .more:hover {
+    transform: translate(10%, 0);
+    -o-transform: translate(10%, 0);
+    -ms-transform: translate(10%, 0);
+    -moz-transform: translate(10%, 0);
+    -webkit-transform: translate(10%, 0);
+    text-decoration: none;
+}
+
+.notice .notice_title .more a:hover {
+    text-decoration: none;
+}
+
+.notice .notice_ul {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 30px;
+}
+
+.notice .notice_ul li {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.notice .notice_ul li a {
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    display: block;
+    width: 100%;
+}
+
+.notice .notice_ul li .rili {
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+
+.notice .notice_ul li .rili span {
+    font-size: 10px;
+    display: block;
+    height: 24px;
+    width: 100%;
+    color: #015175;
+    border-bottom: 1px solid #FFFFFF;
+    line-height: 24px;
+    background-color: #6dc8ee;
+    text-align: center;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.notice .notice_ul li .rili p {
+    height: 60px;
+    width: 100%;
+    background-color: #c5e9f8;
+    color: #0072a6;
+    line-height: 60px;
+    text-align: center;
+    font-size: 35px;
+    font-family: "寰蒋闆呴粦";
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.notice .notice_ul li .notice_ul_infos {
+    float: right;
+    width: 79%;
+    border-left: 1px solid #FFFFFF;
+    background-color: #eff4f7;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    height: 84px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+}
+
+.notice .notice_ul li .notice_ul_infos h3 {
+    font-family: "寰蒋闆呴粦";
+    font-size: 20px;
+    color: #0a8fc8;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-indent: 0.6em;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+.notice .notice_ul li .notice_ul_infos h5 {
+    font-family: "寰蒋闆呴粦";
+    font-size: 13px;
+    color: #656565;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-indent: 2em;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+.notice .notice_ul li:hover {
+    color: #FFFFFF;
+}
+
+.notice .notice_ul li:hover .rili span {
+    background-color: transparent;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.notice .notice_ul li:hover .rili p {
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.notice .notice_ul li:hover .notice_ul_infos h3 {
+    color: #FFFFFF;
+}
+
+.notice .notice_ul li:hover .notice_ul_infos h5 {
+    color: #FFFFFF;
+}
+
+.notice .notice_ul li:hover .notice_ul_infos {
+    background-color: transparent;
+    color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+.notice li {
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.notice li::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    background: inherit;
+    border-radius: 50px;
+    z-index: -1;
+    opacity: 0.4;
+    -webkit-transform: scale3d(0.8, 0.5, 1);
+    transform: scale3d(0.8, 0.5, 1);
+}
+
+.notice li:hover {
+    -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+    color: #ECEFF1;
+    background-color: #0072a6;
+    -webkit-animation: anim-moema-1 0.3s forwards;
+    animation: anim-moema-1 0.3s forwards;
+}
+
+.notice li:hover::before {
+    -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+    animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+@-webkit-keyframes anim-moema-1 {
+    60% {
+        -webkit-transform: scale3d(0.8, 0.8, 1);
+        transform: scale3d(0.8, 0.8, 1);
+    }
+    85% {
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes anim-moema-1 {
+    60% {
+        -webkit-transform: scale3d(0.8, 0.8, 1);
+        transform: scale3d(0.8, 0.8, 1);
+    }
+    85% {
+        -webkit-transform: scale3d(1.1, 1.1, 1);
+        transform: scale3d(1.1, 1.1, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes anim-moema-2 {
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes anim-moema-2 {
+    to {
+        opacity: 0;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.college_view {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-top: 52px;
+    padding-bottom: 36px;
+    background: url(../images/jiangzuo.png) no-repeat 100% 100%;
+    background-size: 100% 100%;
+}
+
+.college_view_title h2 {
+    font-size: 1.625em;
+    font-family: "寰蒋闆呴粦";
+    margin-left: 6px;
+    background: url(../photo/fengcai_icon.png) no-repeat left center;
+    text-indent: 1.8em;
+    background-size: 26px 26px;
+    color: #1792c9;
+}
+
+.college_view .college_view_ul {
+    margin-top: 0;
+    margin-bottom: 36px;
+    width: 100%;
+    text-align: center;
+}
+
+.college_view .college_view_ul li {
+    width: 17%;
+    margin-top: 38px;
+    margin-bottom: 20px;
+    margin-right: 1%;
+    border-radius: 12px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    height: 200px;
+}
+
+.college_view .college_view_ul li a:hover {
+    transform: translateY(-20px);
+    opacity: 1;
+    text-decoration: none;
+    color: #000;
+}
+
+.college_view .college_view_ul li a:hover .speach_details > span {
+    display: block;
+}
+
+.college_view .college_view_ul li a {
+    display: block;
+    width: 100%;
+    background-color: #6dc8ee;
+    opacity: 0.6;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+
+.college_view .college_view_img-wrapper {
+    width: 100%;
+    margin: 8px auto 0;
+    position: relative;
+}
+
+.college_view .college_view_img-wrapper img {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto
+}
+
+.college_view .college_view_ul li a > span {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: "寰蒋闆呴粦";
+    color: #2F383D;
+    text-align: center;
+}
+
+.speach_details > span {
+    margin: 6px 0 0 0;
+    display: block;
+    font-size: 0.8em;
+    font-family: "寰蒋闆呴粦";
+    color: #2F383D;
+    text-align: center;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.college_view .more a {
+    width: 9%;
+    display: block;
+    background-color: #6dc8ee;
+    color: #656565;
+    font-size: 0.9em;
+    float: right;
+    margin-right: 4%;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 2px;
+    box-shadow: 0 0 4px #515855;
+    opacity: 0.6;
+    overflow: hidden;
+    transition: all 0.4s ease-in;
+}
+
+.college_view .more a:hover {
+    transform: translateX(10%);
+    -moz-transform: translateX(10%);
+    -webkit-transition: translateX(10%);
+    text-decoration: none;
+}
+
+.college_view_mask {
+    position: absolute;
+    bottom: 2px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 999;
+    height: 86px;
+    display: none;
+    padding-top: 6px;
+}
+
+.college_view_mask span {
+    font-size: 2em;
+    font-weight: 400;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.information {
+    overflow: hidden;
+    padding-top: 57px;
+    padding-bottom: 30px;
+    background-color: #eff4f7;
+}
+
+.academic {
+    width: 28%;
+    margin: 0 2%;
+    float: left;
+}
+
+.academic_title {
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.academic_title i {
+    display: block;
+    float: left;
+    margin-top: 4px;
+    font-size: 2em;
+    color: #0a8fc8;
+    margin-left: 6px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.academic_title h2 {
+    font-family: "寰蒋闆呴粦";
+    font-size: 1.625em;
+    color: #0a8fc8;
+    margin-left: 6px;
+    height: 30px;
+    line-height: 22px;
+    text-align: center;
+    float: left;
+}
+
+.academic_content {
+    width: 40%;
+    margin: 0 4%;
+    float: left;
+    border-radius: 50%;
+}
+
+.academic_content a {
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.academic_content a:hover {
+    transform: scale(1.04);
+    opacity: 0.8;
+}
+
+.academic_content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.academic_content i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.academic_content span {
+    color: #0a8fc8;
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+
+}
+
+.train {
+    width: 33%;
+    margin: 0;
+    float: left;
+}
+
+.train_title {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.train_title i {
+    display: block;
+    float: left;
+    font-size: 2em;
+    color: #0a8fc8;
+    margin-top: 4px;
+    margin-left: 6px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.train_title h2 {
+    font-family: "寰蒋闆呴粦";
+    font-size: 22px;
+    color: #0a8fc8;
+    margin-left: 6px;
+    height: 30px;
+    line-height: 22px;
+    text-align: center;
+    float: left;
+}
+
+.train_content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.train_content .society {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #d8dddf;
+    width: 100%;
+    overflow: hidden;
+}
+
+.train_content .society p {
+    float: left;
+    height: 55px;
+    width: 38%;
+    margin-right: 5%;
+    border-radius: 10px;
+    border: 3px solid #0a8fc8;
+    color: #0A8FC8;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.8s ease;
+}
+
+.train_content a {
+    transition: all 0.8s ease;
+    color: #0A8FC8;
+}
+
+.train_content a:hover p {
+    border: 3px solid #002376;
+    color: #002376;
+}
+
+.train_content a:hover h5 {
+    color: #002376;
+}
+
+.train_content a:hover h3 {
+    color: #002376;
+}
+
+.train_content .society h3 {
+    width: 53%;
+    float: left;
+    height: 20px;
+    font-size: 22px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    transition: all 0.8s ease;
+}
+
+.train_content .society h5 {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: all 0.8s ease;
+}
+
+.train_content .prefession {
+    padding-bottom: 40px;
+    border-bottom: #d8dddf;
+    width: 100%;
+    overflow: hidden;
+}
+
+.train_content .prefession p {
+    float: left;
+    height: 55px;
+    width: 38%;
+    margin-right: 5%;
+    border-radius: 10px;
+    border: 3px solid #0a8fc8;
+    color: #0A8FC8;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: all 0.8s ease;
+}
+
+.train_content .prefession h3 {
+    width: 54%;
+    float: left;
+    height: 20px;
+    line-height: 23px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    transition: all 0.8s ease;
+}
+
+.train_content .prefession h5 {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: all 0.8s ease;
+}
+
+.recruit {
+    width: 28%;
+    margin: 0 2%;
+    float: left;
+}
+
+.recruit .recruit_title {
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.recruit .recruit_title i {
+    display: block;
+    float: left;
+    font-size: 2em;
+    color: #0a8fc8;
+    margin-top: 4px;
+    margin-left: 6px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.recruit .recruit_title h2 {
+    font-family: "寰蒋闆呴粦";
+    font-size: 1.625em;
+    color: #0a8fc8;
+    margin-left: 6px;
+    height: 30px;
+    line-height: 22px;
+    text-align: center;
+    float: left;
+}
+
+.recruit_content {
+    width: 40%;
+    float: left;
+    margin: 0 4%;
+}
+
+.recruit_content a {
+    width: 100%;
+    display: block;
+    padding-top: 100%;
+    color: #FFFFFF;
+    position: relative;
+    transition: all 0.8s ease;
+}
+
+.recruit_content a:hover {
+    transform: scale(1.04);
+    opacity: 0.8;
+}
+
+.recruit_content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.recruit_content i {
+    position: absolute;
+    font-size: 4em;
+    color: #FFFFFF;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recruit_content span {
+    margin-top: 10px;
+    color: #0072A6;
+    font-size: 2em;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.teacher {
+    width: 100%;
+    background-color: #0086B3;
+    padding-top: 40px;
+    background-size: 100% 100%;
+}
+
+.teacherimg{
+    position: relative;
+}
+
+.teacher .teacher_title {
+    margin-left: 16px;
+    overflow: hidden;
+}
+
+.teacher .teacher_title i {
+    color: #FFFFFF;
+    font-size: 1.625em;
+    margin-right: 1%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.teacher .teacher_title h2 {
+    color: #FFFFFF;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 1.625em;
+}
+
+.footer {
+    background-color: #2f383d;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.footer h1 {
+    font-size: 2.18em;
+    color: #FFFFFF;
+    font-family: "寰蒋闆呴粦";
+    margin-bottom: 40px;
+}
+
+.footer .container div {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+}
+
+.footer .container {
+    overflow: hidden;
+}
+
+.footer .school_web ul {
+    width: 65%;
+    margin-left: 16%;
+}
+
+.footer ul li a {
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: "寰蒋闆呴粦";
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.footer a:hover {
+    opacity: 0.6;
+}
+
+.footer2 a:hover {
+    opacity: 0.6;
+}
+
+.footer .lianjie ul {
+    width: 65%;
+    margin-left: 16%;
+}
+
+.footer .aboutus ul {
+    float: left;
+    width: 49%;
+}
+
+.footer .aboutus .footer_logo {
+    float: left;
+    width: 27%;
+    margin-left: 9%;
+    margin-right: 15%;
+}
+
+.footer .aboutus .footer_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer_bottom {
+    padding-top: 28px;
+    padding-bottom: 22px;
+    background-color: #232d33;
+}
+
+.footer_bottom h5 {
+    font-size: 12px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/*slide*/
+.menu-content {
+    display: none;
+    height: auto;
+}
+
+#showLeftPush {
+    display: none;
+    height: 300px;
+}
+
+.menu-content > li > a {
+    background-color: #166383;
+}
+
+.footer2 {
+    display: none;
+    background-color: #2f383d;
+    padding-top: 20px;
+}
+
+.footer2 .school_web2 {
+    width: 40%;
+    float: left;
+    margin-left: 15%;
+}
+
+.footer2 .lianjie2 {
+    width: 40%;
+    float: left;
+}
+
+.footer2 h1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    margin-bottom: 10px;
+}
+
+.footer2 ul {
+    width: 100%;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer2 .aboutus2 {
+    width: 70%;
+    text-align: center;
+    margin: 14px auto 0;
+}
+
+.footer2 .aboutus2 ul {
+    width: 100%;
+}
+
+.footer2 .aboutus2 ul li {
+    display: inline-block;
+}
+
+.footer2 li {
+    height: 25px;
+    min-width: 170px;
+    overflow: hidden;
+}
+
+.footer2 a {
+    color: #FFFFFF;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-bok-orient: vertical;
+}
+
+.footer2 a:hover {
+    opacity: 0.6;
+}
+
+/*鍥炲埌椤堕儴*/
+.scroll {
+    position: fixed;
+    top: 600px;
+    right: 38px;
+}
+
+.scrollItem {
+    width: 50px;
+    height: 50px;
+    border: #e1e1e1 1px solid;
+    cursor: pointer;
+    text-align: center;
+    background-color: #FFFFFF;
+    opacity: 0.4;
+    line-height: 50px;
+}
+
+.scrollItem i {
+    font-size: 25px;
+    color: #2f383d;
+}
+
+.index_sideSlip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 270px;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: all .45s;
+    -o-transition: all .45s;
+    -ms-transition: all .45s;
+    -moz-transition: all .45s;
+    -webkit-transition: all .45s;
+    z-index: 9999;
+    overflow-y: scroll;
+  
+}
+
+.sideSlip_off {
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    transform: translateX(-270px);
+}
+
+.index_sideSlip_mask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.16);
+    top: 0;
+    left: 0;
+}
+
+.sideSlip_mask_off {
+    display: none;
+}
+
+.index_sideSlip_back {
+    width: 84%;
+    margin: 6% 8% 3% 8%;
+    height: 40px;
+}
+
+.index_sideSlip_back a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgb(14, 144, 210);
+    text-align: center;
+}
+
+.sideSlip_fastTrack_head {
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+    background-color: rgb(64, 64, 64);
+    color: #999999;
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: solid 1px rgb(36, 36, 36);
+}
+
+#menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 30%;
+    font-size: 28px;
+    color: #b1cbda;
+    font-weight: bolder;
+    display: none;
+}
+
+#menu i {
+    line-height: 50px;
+    display: block;
+    margin:0 auto;
+    font-size: 30px !important;
+}
+
+.sideSlip_navigation_item {
+    background-color: rgb(26, 26, 26);
+}
+
+.sideSlip_navigation li .sideSlip_navigation_out {
+    font-size: 15px;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    text-indent: 1em;
+    border-top: solid 1px rgb(61, 61, 61);
+    border-bottom: solid 1px rgb(36, 36, 36);
+    background-color: rgb(51, 51, 51);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.sideSlip_navigation li .sideSlip_navigation_out:hover {
+    background-color: rgb(71, 71, 71);
+}
+
+.sideSlip_navigation li ul {
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_1 {
+    height: 42px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_2 {
+    height: 84px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_3 {
+    height: 126px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_4 {
+    height: 168px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_5 {
+    height: 210px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_6 {
+    height: 252px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_7 {
+    height: 294px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_8 {
+    height: 336px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_9 {
+    height: 378px;
+}
+
+.sideSlip_navigation li .sideSlip_list_height_10 {
+    height: 420px;
+}
+
+.sideSlip_navigation li .sideSlip_list_off {
+    height: 0;
+}
+
+.sideSlip_navigation li ul .sideSlip_navigation_in {
+    font-size: 14px;
+    width: 100%;
+}
+
+.sideSlip_navigation li ul .sideSlip_navigation_in a {
+    display: inline-block;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    height: 22px;
+    line-height: 22px;
+    padding: 10px 0;
+    text-indent: 1em;
+}
+
+.index_sideSlip_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.sideSlip_navigation_in a:hover {
+    opacity: 0.6;
+    background-color: #015175;
+}
+
+/*甯堣祫鍔涢噺鎻掍欢*/
+.friend {
+    height: 413px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.mr_frbox {
+    height: 407px;
+    padding: 24px 0px 0px;
+}
+
+.mr_frBtnL {
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 46px;
+    margin: 160px 3% 0 0;
+    width: 4%;
+}
+
+.mr_frUl {
+    float: left;
+    height: 202px;
+    width: 86%;
+}
+
+.mr_frBtnR {
+    float: right;
+    margin-top: 160px;
+    cursor: pointer;
+    width: 4%;
+    height: 46px;
+}
+
+.mr_frUl ul li {
+    display: inline;
+    float: left;
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mr_frUl ul li:hover .mr_zhe{
+    display: none;
+}
+
+.mr_frUl ul li a img {
+    position: relative;
+    top:0;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display:block;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .information_ul_libg i {
+        font-size: 4em;
+    }
+    .header .nav {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    .header .container {
+        width: 100%;
+    }
+    .header .nav {
+        margin-top: 15px;
+    }
+    .college_news .college_news_content .college_news_content_text p {
+        margin-bottom: 20px;
+    }
+    .college_news .college_news_content .college_news_content_text h2 a {
+        font-size: 1.2em;
+    }
+    .academic {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .train {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 2%;
+    }
+    .academic_content {
+        width: 25%;
+        margin: 0 11%;
+    }
+    .recruit_content {
+        width: 25%;
+        margin: 0 11%;
+    }
+    .academic_content i {
+        font-size: 7em;
+    }
+    .recruit_content i {
+        font-size: 7em;
+    }
+    .recruit {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .college_news .college_news_content .college_news_content_img img:hover {
+        transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+    .college_view .college_view_ul li a:hover {
+        transform: translateY(0px);
+        opacity: 1;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header .nav .dropdown {
+        width: 25%;
+    }
+    .bigPicture{
+        height: 0;
+        padding-top: 36.6%;
+    }
+    .header .nav {
+        margin-top: 8px;
+    }
+    .nav {
+        display: none;
+    }
+    .header .logo {
+        width: 28%;
+        margin: 0 auto;
+        float: none;
+    }
+    .header {
+        position: relative;
+    }
+    #showLeftPush {
+        display: block;
+        color: #FFFFFF;
+        float: left;
+        width: 8%;
+        font-size: 30px !important;
+        position: absolute;
+        left: 50px;
+        top: 25%;
+    }
+    .college_news_content_text span {
+        display: none;
+    }
+    .college_news .college_news_content {
+        padding-bottom: 10px;
+    }
+    .notice .notice_ul {
+        margin-top: 24px;
+    }
+    .footer .school_web ul {
+        width: 84%;
+    }
+    .footer .lianjie ul {
+        width: 72%;
+    }
+    #menu {
+        right:6%;
+        display: block;
+    }
+    .academic_content span {
+        font-size: 20px;
+    }
+    .notice li:hover::before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .college_news .college_news_ul li {
+        margin-bottom: 8px;
+    }
+    .main-news .notice {
+        height: 500px;
+    }
+    .notice .notice_ul li {
+        margin-bottom: 12px;
+    }
+    .notice .notice_ul li .notice_ul_infos h3 {
+        text-indent: 1em;
+    }
+    .notice .notice_ul li .notice_ul_infos h5 {
+        text-indent: 1em;
+    }
+    .college_news .college_news_content .college_news_content_text h2 a {
+        font-size: 28px;
+    }
+
+    .college_news .college_news_content .college_news_content_text p {
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    .main-news .college_news {
+        width: 100%;
+        margin: 0;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .main-news .notice {
+        width: 100%;
+        margin: 0;
+    }
+    .footer h1 {
+        margin-bottom: 10px;
+        font-size: 1.8em;
+    }
+    .footer {
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+    .footer ul li a {
+        font-size: 0.9em;
+    }
+    .slider {
+        padding-top: 45%;
+    }
+    .mr_frUl ul li {
+        width: 200px;
+        height: 268px;
+    }
+    .college_view{
+        background: none;
+        background: #6dc8ee;
+    }
+    .college_view .college_view_ul li a > span {
+        font-size: 26px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+    .college_view .college_view_ul li a {
+        opacity: 1;
+        border-radius: 0;
+        padding-bottom: 0;
+    }
+    .college_view .college_view_ul li {
+        width: 100%;
+        margin: 0 0;
+        height: auto;
+        border-radius: 0;
+    }
+    .college_view_mask {
+        display: block;
+    }
+    .teacher {
+        height: 400px;
+        overflow: hidden;
+    }
+    .mr_frBtnR {
+        margin-top: 110px;
+    }
+    .mr_frBtnL {
+        margin-top: 110px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .pre-header ul li {
+        width: 17%;
+    }
+    .container {
+        width: 100%;
+    }
+    .footer2 {
+        display: block;
+    }
+    .footer {
+        display: none;
+    }
+    .college_view .college_view_img {
+        padding-top: 0;
+    }
+    .college_view .college_view_ul li a:hover .speach_details > span {
+        display: none;
+    }
+    .bigPicture{
+        height: 0;
+        padding-top: 46%;
+    }
+    .college_view .college_view_ul li a:hover {
+        transform: translateY(0);
+        opacity: 1;
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .main-news .college_news {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .main-news .notice {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .college_news .college_news_content .college_news_content_img {
+        width: 100%;
+        margin: 0;
+    }
+    .college_news .college_news_content .college_news_content_text {
+        width: 100%;
+    }
+    .header .nav {
+        margin-top: 3px;
+    }
+    .scroll {
+        top: 500px;
+        right: 12px;
+    }
+    .pre-header ul li a span {
+        font-size: 0.75em;
+    }
+    .teacher {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        height: 330px;
+    }
+    .college_view .college_view_img-wrapper {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .pre-header {
+        display: none;
+    }
+    .header .nav {
+        margin-top: 2px;
+        float: none;
+        margin: 0 auto;
+    }
+    .header {
+        padding-bottom: 4px;
+    }
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .footer h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .footer ul li a {
+        font-size: 0.5em;
+    }
+    .footer_bottom h5 {
+        font-size: 0.5em;
+    }
+    .header .logo {
+        width: 50%;
+    }
+    .slider {
+        padding-top: 54%;
+    }
+    .college_news .college_news_ul li a h5 {
+        font-size: 14px;
+        width: 100%;
+    }
+    .college_news .college_news_content .college_news_content_text h2 a {
+        font-size: 22px;
+    }
+    .college_news .college_news_content .college_news_content_text p {
+        font-size: 14px;
+    }
+    .college_news .college_news_ul li a span {
+        display: none;
+    }
+    .college_view_mask span {
+        font-size: 16px;
+    }
+    .academic_content i {
+        font-size: 4em;
+    }
+    .recruit_content i {
+        font-size: 4em;
+    }
+    .train_content .society h3 {
+        font-size: 16px;
+    }
+    .train_content .society h5 {
+        font-size: 12px;
+    }
+    .train_content .prefession h3 {
+        font-size: 16px;
+    }
+    .train_content .prefession h5 {
+        font-size: 12px;
+    }
+    .academic {
+        margin-bottom: 40px;
+    }
+    .train {
+        margin-bottom: 0;
+    }
+    .recruit {
+        margin-bottom: 20px;
+    }
+    .main-news {
+        padding-top: 10px;
+    }
+    .college_view {
+        padding-top: 30px;
+        background: none;
+        background-color: #6dc8ee;
+    }
+    .college_view .college_view_ul {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    #menu {
+        right: 2%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mr_frBtnL{
+        margin-top: 60px;
+    }
+    .mr_frBtnR{
+        margin-top: 60px;
+    }
+    .mr_frUl ul li{
+        width: 140px;
+        height: 180px;
+    }
+    .teacher{
+        height: 280px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .header .nav .dropdown > a > span:after {
+        display: none;
+    }
+    .college_news .college_news_ul li a span {
+        display: none;
+    }
+    .college_news .college_news_ul li a h5 {
+        width: 100%;
+    }
+    .college_news .college_news_content .college_news_content_text h2 a {
+        margin-bottom: 8px;
+    }
+    .college_news .college_news_content .college_news_content_text p {
+        margin-bottom: 10px;
+    }
+    .college_view .more a {
+        width: 20%;
+    }
+    .footer2 .school_web2 {
+        width: 52%;
+        float: left;
+        margin-left: 8%;
+    }
+    .footer2 .lianjie2 {
+        width: 40%;
+        float: right;
+    }
+    .footer2 li {
+        min-width: 121px;
+        height: 15px;
+        line-height: 15px;
+    }
+    .footer2 ul {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .footer2 h1 {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .scroll {
+        position: fixed;
+        top: 550px;
+        right: 10px;
+    }
+    .scrollItem {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #menu i {
+        font-size: 32px;
+    }
+    .main-news {
+        padding: 15px 0;
+    }
+}
+/*教师插件样式*/
+.teacher-name{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background: #fff;
+}
+.teacher-intro{
+	position: absolute;
+	bottom: 0;
+	display: none;
+	width: 100%;
+	background: #eff4f7;
+}
+.mr_frUl li h5{
+	width:100%;
+	padding: 5px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	display: block;
+	background: linear-gradient(to bottom,#6fc9eb,#d8e5f5);
+	font-size: 30px;
+	color: #1a8fc8;
+}
+
+.teacherimg img{
+	position: absolute;
+	transition: 0.4s;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+.teacherimg{
+	position: relative;
+}
+.teacherinfor{
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	height: 0;
+	z-index: 9;
+	background-color: #fff;
+	position: absolute;
+	background:  linear-gradient(to bottom,#eff3f6,#d8e5f5);
+}
+
+.mr_frUl li h6{
+	padding: 10px;
+	text-indent: 2em;
+}
+
+.mr_frUl li{
+	margin: 0 5px;
+}
+.mr_frUl li:hover .teacherinfor{
+	height: 350px;
+	transition: 0.4s
+}
+
+
+@media only screen and (max-width: 800px) {
+	.mr_frUl li{
+		margin: 0 2px;
+	}
+	.mr_frUl li h6{
+		/*瀹�8琛岋紝瓒呭嚭鏄剧ず...*/
+		overflow : hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 8;
+		-webkit-box-orient: vertical;
+		line-height: 1.6em;
+		height: 12em;
+	}
+	.mr_frUl li h5{
+		padding: 1px;
+		font-size: 18px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.mr_frUl li h6{
+		-webkit-line-clamp: 5;
+		height: 7.2em;
+	}
+}
