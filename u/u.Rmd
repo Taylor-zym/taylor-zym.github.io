@@ -1,0 +1,101 @@
+---
+title: "姐姐晚上好啊😎~"
+subtitle: "&#x2694;&#xFE0F; 是我啦 +<br/>&#x1F60E; 天天开心~"  
+author: 
+  - "Yiming Zeng"
+  - "Zhengzhou Henan"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+## 以后天天陪着你
+
+10-7是我们相识的日子，也没想到能跟你关系如此好~
+
+
+
+### 随便写点东西
+
+我很高兴认识你，现在我也很喜欢你，也很高兴，你也会喜欢我。
+跟你在一起哪怕呆一天什么也不说，我也不会无聊，我得知你也是这样。
+
+我是很在乎你的，我自己很清楚，我愿意给你我的一切可以给你的。
+--
+
+- 5-28，2000、3-16，2002，你也不比我大多少~，
+
+--
+
+- 研二、大三，也差不多，共同语言还蛮多的~😘
+--
+
+- 以后一起学习，一起进步，互相陪伴~🤪
+
+
+---
+
+## 图片~
+
+.pull-left[
+![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
+]
+
+.pull-right[
+![A GitHub Octocat, style "dinotcat"](https://octodex.github.com/images/dinotocat.png)
+]
+
+---
+
+### 但是今天我的表现不太好~
+
+--
+
+#### 呜呜呜呜~
+😭
+😭
+😭
+😭
+😭
+😭
+
+### 以后我会改正的~我可喜欢你了，其实还有好多话没写完，等我下次给你慢慢说~
+--
+
+## 希望以后我能有你陪我~
+---
+class: center, middle
+
+# Thanks!
+
+
+### 看完啦~
