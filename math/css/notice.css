@@ -1,0 +1,293 @@
+/*common 娓呴櫎榛樿鏍峰紡*/
+* {
+	padding: 0; margin: 0;
+	font-family: "寰蒋闆呴粦";
+}
+a {
+	color: #717171;
+	text-decoration: none;
+}
+img{
+	border: 0;
+	display: block;
+}
+input, textarea {
+    outline: none;
+    border: none;
+}
+textarea {
+    resize: none;
+    overflow: auto;
+}
+.clearfix{
+	clear: both;
+}
+
+.main-content{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.main1{
+	color: #717171;
+	font-size: 13px;
+}
+
+.main1 .iconfont{
+	float: left;
+	font-size: 13px;
+	margin: 25px 5px;
+}
+.main1-text{
+	float: right;
+	margin: 25px 5px;
+}
+
+.main2{
+	height:auto;
+	background: #eff4f7;
+	outline: 2px solid #efeded;
+}
+.main2-left{
+	width: 75%;
+	float: left;
+}
+.main2-left h1{
+	font-size: 38px;
+	padding: 70px 0 70px 36px;
+}
+.main2-left span{
+	float: left;
+	font-size: 12px;
+	margin: 28px 6px;
+}
+.main2-left .iconfont1{
+	font-size: 14px;
+}
+
+.main2-right{
+	width: 25%;
+	height: auto;
+	float: right;
+	background: #f9f9f9;
+	outline: 2px solid #efeded;
+}
+.main2-right h3{
+	display: block;
+	height: 66px;
+	line-height: 66px;
+	text-align: center;
+	font-size: 21px;
+	background: #eff4f7;
+}
+
+.main2-right-icon{
+	text-align: center;
+}
+.main2-right-icon a{
+	/*display: inline-block;*/
+}
+.main2-right-icon a:hover{
+	transform: scale(1);
+	transition: all 0.4s ease;
+}
+.main2-right-icon1{
+	margin: 30px auto;
+}
+.main2-right-icon1 .iconfont{
+	font-size: 36px;
+}
+.main2-right-icon1 a:nth-child(1){
+	color: #68a5e1;
+}
+.main2-right-icon1 a:nth-child(2){
+	color: #1abb0e;
+}
+.main2-right-icon1 a:nth-child(3){
+	color: #1296db;
+}
+.main2-right-icon1 a:nth-child(4){
+	color: #e63c53;
+}
+
+.main2-right-icon2{
+	padding-bottom: 36px;
+}
+.main2-right-icon2 a{
+	color: #e60012;
+}
+.main2-right-icon2 .iconfont{
+	font-size: 48px;
+}
+.main3-left{
+	width: 71%;
+	float: left;
+	padding: 44px 2%;
+	
+}
+.main3-left p{
+	line-height: 1.8em;
+	text-indent: 2em;
+}
+.main3-text1{
+	font-size: 15px;
+	
+	padding: 20px;
+	background: #eff4f7;
+	border-left:5px solid #21c2f8
+}
+.main3-title{
+	display: block;
+	margin: 50px 0 30px;
+}
+.main3-text2{
+	display: block;
+	margin: 20px 0 10px;
+}
+.main3-text3{
+	display: block;
+	text-align: right;
+	margin: 30px 0;
+}
+
+.main3-zan{
+	position: relative;
+}
+.main3-zan img{
+	margin: 100px auto;
+}
+.main3-zan img:hover{
+	transform: scale(1.2);
+	transition: all 0.4s ease;
+}
+.main3-zan-text{
+	position: absolute;
+	top: 70%;
+	left: 55%;
+}
+
+.main3-right{
+	width: 21%;
+	padding: 40px 2%;
+	float: right;
+}
+.main3-right-icon1,.main3-right-icon2{
+	margin: 20px 0;
+}
+.main3-right-icon1 .iconfont{
+	font-size: 17px;
+	color: #21c2f8;
+}
+.main3-right-label{
+	font-size: 12px;
+	color: black;
+	
+	float: left;
+	margin: 10px 15px 10px 0;
+	padding: 10px 16px;
+	background: #f9f9f9;
+}
+.main3-right-label:hover{
+	color: #21c2f8;
+}
+
+.main3-right-icon2 .iconfont{
+	font-size: 17px;
+	color: #e60012;
+}
+
+.main3-right li{
+	font-size: 11px;
+	color: #9a9a9a;
+	line-height: 1.8em;
+	margin: 10px 0;
+}
+.main3-right li:hover{
+	color: #e60012;
+}
+
+.main3-right-card{
+	font-size: 12px;
+	margin: 20px 0;
+}
+.main3-right-card-text{
+	padding: 6px 2%;
+	float: left;
+	height: 50px;
+	width: 76%;
+	background: #F9F9F9;
+	color: #606060;
+	
+	/*瀹氳鏂囨湰婧㈠嚭瑙ｅ喅鏂规       锛�3琛岋級*/
+    overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	line-height: 1.6em;
+	height: 3.1em;
+}
+.main3-right-last,.main3-right-next{
+	float: left;
+	height: 50px;
+	width: 20%;
+	text-align: center;
+	line-height: 50px;
+}
+.main3-right-last{
+	background: #21c2f8;
+}
+.main3-right-next{
+	background: #21c2f8;
+}
+
+@media only screen and (max-width: 1140px) {
+	.main-content{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.main3-zan-text{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.main1-text{
+		display: none;
+	}
+
+	.main2-left h1{
+		font-size: 30px;
+		padding: 30px 0 10px;
+		text-align: center;
+	}
+
+	.main2-left{
+		float: none;
+		width: 100%;
+	}
+	
+	.main2-left span:nth-child(5),
+	.main2-left span:nth-child(6),
+	.main2-left span:nth-child(7),
+	.main2-left span:nth-child(8){
+		display: none;
+	}
+
+	.main2-right{
+		display: none;
+	}
+
+	.main3-left{
+		float: none;
+		width: 96%;
+	}
+	.main3-zan img{
+		margin: 20px auto;
+	}
+	.main3-right{
+		float: none;
+		width: 92%;
+		padding: 40px 4%;
+	}
+}

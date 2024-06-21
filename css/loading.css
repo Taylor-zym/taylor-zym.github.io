@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    background: #2C3C4F;
+}
+.loader{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 300px auto;
+    border-radius: 50%;
+    border-top: 6px solid #F777AF;
+    border-bottom: 6px solid transparent;
+    animation: loading 1.5s linear infinite;  
+}
+.loader::before,.loader::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    border-bottom: 6px solid transparent;
+}
+.loader::before{
+    border-top: 6px solid #0B84DD;  
+    transform: rotate(150deg);
+    left: 2px;
+    top: -2px;
+    z-index: 1;
+}
+.loader::after{
+    border-top: 6px solid #DE5AFA;
+    transform: rotate(230deg);
+    top: -2px;
+    left: -3px;   
+}
+.loader span{
+    /* 通过span同步反向旋转来实现文字固定不动的效果 */
+    animation: loading 1.5s linear infinite reverse;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "微软雅黑";
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #2f373c;
+    position: relative;
+    position: fixed;
+    z-index: 999;
+}
+.header2 {
+    width: 100%;
+    background-color: #eff4f7;
+    position: relative;
+}
+.header2_img {
+    width: 100%;
+    padding-top: 20%;
+}
+.header2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header_logo {
+    width: 15%;
+    float: left;
+    margin-top: 6px;
+    margin-left: 2%;
+}
+.logowrap {
+    position: relative;
+    padding-top: 28%;
+}
+.header_logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    display: block;
+}
+.nav {
+    float: right;
+    width: 78%;
+    height: 100%;
+}
+.nav li {
+    float: left;
+    width: 12.5%;
+    font-size: 14px;
+    height: 100%;
+}
+.nav li a {
+    display: block;
+    color: #b1cbda;
+    width: 100%;
+    line-height: 70px;
+    transition: all 0.4s ease;
+}
+.nav li a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.clearfloat {
+    clear: both;
+}
+.main1-back{
+    width:100%;
+    height: 200px;
+}
+.main1-back img{
+    width:100%;
+    height:100%;
+}
+/*移动端导航*/
+.index_sideSlip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 270px;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: all .45s;
+    -o-transition: all .45s;
+    -ms-transition: all .45s;
+    -moz-transition: all .45s;
+    -webkit-transition: all .45s;
+    z-index: 9999;
+    overflow-y: scroll;
+    display: none;
+}
+.sideSlip_off {
+    -webkit-transform: translateX(-270px);
+    -moz-transform: translateX(-270px);
+    -ms-transform: translateX(-270px);
+    -o-transform: translateX(-270px);
+    transform: translateX(-270px);
+}
+.index_sideSlip_mask {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.16);
+    top: 0;
+    left: 0;
+}
+.sideSlip_mask_off {
+    display: none;
+}
+.index_sideSlip_back {
+    width: 84%;
+    margin: 6% 8% 3% 8%;
+    height: 40px;
+}
+.index_sideSlip_back a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgb(14, 144, 210);
+    text-align: center;
+}
+.sideSlip_fastTrack_head {
+    line-height: 30px;
+    height: 30px;
+    font-size: 12px;
+    background-color: rgb(64, 64, 64);
+    color: #999999;
+    width: 100%;
+    padding: 0 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-bottom: solid 1px rgb(36, 36, 36);
+}
+#menu {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    margin-top: -25px;
+    font-size: 28px;
+    color: #b1cbda;
+    font-weight: bolder;
+    display: none;
+    z-index: 999;
+}
+#menu:hover {
+    text-decoration: none;
+}
+#menu i {
+    font-size: 30px !important;
+}
+.sideSlip_navigation_item {
+    background-color: rgb(26, 26, 26);
+}
+.sideSlip_navigation li .sideSlip_navigation_out {
+    font-size: 15px;
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    text-indent: 1em;
+    border-top: solid 1px rgb(61, 61, 61);
+    border-bottom: solid 1px rgb(36, 36, 36);
+    background-color: rgb(51, 51, 51);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.sideSlip_navigation li .sideSlip_navigation_out:hover {
+    background-color: rgb(71, 71, 71);
+}
+.sideSlip_navigation li ul {
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.sideSlip_navigation li .sideSlip_list_height_1 {
+    height: 42px;
+}
+.sideSlip_navigation li .sideSlip_list_height_2 {
+    height: 84px;
+}
+.sideSlip_navigation li .sideSlip_list_height_3 {
+    height: 126px;
+}
+.sideSlip_navigation li .sideSlip_list_height_4 {
+    height: 168px;
+}
+.sideSlip_navigation li .sideSlip_list_height_5 {
+    height: 210px;
+}
+.sideSlip_navigation li .sideSlip_list_height_6 {
+    height: 252px;
+}
+.sideSlip_navigation li .sideSlip_list_height_7 {
+    height: 294px;
+}
+.sideSlip_navigation li .sideSlip_list_height_8 {
+    height: 336px;
+}
+.sideSlip_navigation li .sideSlip_list_height_9 {
+    height: 378px;
+}
+.sideSlip_navigation li .sideSlip_list_height_10 {
+    height: 420px;
+}
+.sideSlip_navigation li .sideSlip_list_off {
+    height: 0;
+}
+.sideSlip_navigation li ul .sideSlip_navigation_in {
+    font-size: 14px;
+    width: 100%;
+}
+.sideSlip_navigation li ul .sideSlip_navigation_in a {
+    display: inline-block;
+    width: 100%;
+    color: rgb(204, 204, 204);
+    height: 22px;
+    line-height: 22px;
+    padding: 10px 0;
+    text-indent: 1em;
+}
+.index_sideSlip_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.sideSlip_navigation_in a:hover {
+    opacity: 0.6;
+    background-color: #015175;
+    text-decoration: none;
+}
+.text {
+    width: 60%;
+    height: 20px;
+    position: absolute;
+    top: 8%;
+    left: 12%;
+    color: #FFFFFF;
+    font-size: 12px;
+    letter-spacing: 6px;
+}
+.text i {
+    float: left;
+}
+.text span {
+    float: left;
+}
+.text a {
+    color: #FFFFFF;
+    float: left;
+}
+
+.title {
+    position: absolute;
+    bottom: -20px;
+    left: 30%;
+    width: 39%;
+    height: 80px;
+    z-index: 994;
+}
+.title span {
+    color: #FFFFFF;
+    font-size: 33px;
+    width: 100%;
+    height: 100%;
+    background-color: #1691b7;
+    text-align: center;
+    display: block;
+    line-height: 80px;
+    letter-spacing: 8px;
+}
+.footer {
+    background-color: #2f383d;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+.footer h1 {
+    font-size: 29px;
+    color: #FFFFFF;
+    font-family: "微软雅黑";
+    margin-bottom: 40px;
+}
+.footer .container div {
+    float: left;
+    width: 33%;
+    overflow: hidden;
+}
+.footer .container {
+    overflow: hidden;
+}
+.footer .school_web ul {
+    width: 65%;
+    margin-left: 16%;
+}
+.footer ul li a {
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: "微软雅黑";
+    font-size: 1em;
+    font-weight: 100;
+}
+.footer a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+.footer2 a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+.footer ul li a {
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    font-weight: 100;
+}
+.footer .lianjie ul {
+    width: 65%;
+    margin-left: 16%;
+}
+.footer .aboutus ul {
+    float: left;
+    width: 49%;
+}
+.footer .aboutus .footer_logo {
+    float: left;
+    width: 27%;
+    margin-left: 9%;
+    margin-right: 15%;
+}
+.footer .aboutus .footer_logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer_bottom {
+    padding-top: 28px;
+    padding-bottom: 22px;
+    background-color: #232d33;
+}
+.footer_bottom h5 {
+    font-size: 0.75em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto 10px;
+    font-weight: normal;
+    text-align: center;
+}
+.footer2 {
+    display: none;
+    background-color: #2f383d;
+    padding-top: 20px;
+}
+.footer2 .school_web2 {
+    width: 40%;
+    float: left;
+    margin-left: 15%;
+}
+.footer2 .lianjie2 {
+    width: 40%;
+    float: left;
+}
+.footer2 h1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.footer2 ul {
+    font-size: 0.725em;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer2 .aboutus2 {
+    width: 70%;
+    text-align: center;
+    margin: 20px auto 0;
+}
+.footer2 .aboutus2 ul {
+    width: 100%;
+}
+.footer2 .aboutus2 ul li {
+    display: inline-block;
+}
+.footer2 li {
+    height: 20px;
+    min-width: 140px;
+    overflow: hidden;
+}
+.footer2 a {
+    color: #FFFFFF;
+}
+.footer2 a:hover {
+    opacity: 0.6;
+    text-decoration: none;
+}
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+    #menu {
+        display: block;
+    }
+    .nav {
+        display: none;
+    }
+    .header_logo {
+        width: 30%;
+        margin-top: 16px;
+    }
+    .header {
+        height: 100px;
+    }
+    .header .container .nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer .school_web ul {
+        width: 78%;
+    }
+    .footer .lianjie ul {
+        width: 72%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .footer h1 {
+        margin-bottom: 10px;
+        font-size: 1.8em;
+    }
+    .footer {
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }
+    .footer ul li a {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer2 {
+        display: block;
+    }
+    .footer {
+        display: none;
+    }
+    .header2_img {
+        padding-top: 35%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .footer h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .footer ul li a {
+        font-size: 0.5em;
+    }
+    .footer_bottom h5 {
+        font-size: 0.5em;
+    }
+    .header {
+        height: 80px;
+    }
+    .header_logo{
+        margin-top: 6px;
+    }
+    .title {
+        height: 70px;
+        bottom: -30px;
+    }
+    .title span {
+        line-height: 70px;
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .title {
+        height: 60px;
+    }
+    .title span {
+        line-height: 60px;
+        font-size: 20px;
+    }
+    .header_logo {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer2 .school_web2 {
+        width: 40%;
+        float: left;
+        margin-left: 8%;
+    }
+    .footer2 .lianjie2 {
+        width: 40%;
+        float: right;
+    }
+    .footer2 li {
+        min-width: 135px;
+        margin-bottom: 10px;
+        height: 20px;
+    }
+    .footer2 ul {
+        font-size: 0.6em;
+    }
+    .footer2 h1 {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+}

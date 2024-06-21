@@ -1,0 +1,85 @@
+.college_news .college_news_content .college_news_content_text P{
+	margin-bottom: 27px;
+	
+}
+.college_news .college_news_content{
+	padding-bottom: 0;
+	height: 219px;
+}
+.college_news .college_news_ul{
+	width:90%;
+	margin:4px auto;
+}
+.college_view .college_view_ul LI{
+	float: left;
+	margin-bottom: 20px;
+}
+.information_ul_libg{
+	position: relative;
+}
+.information_ul_libg I{
+	position: absolute;
+	top: 30%;
+	left: 34%;
+}
+.header{
+	height: 160px;
+}
+.header .nav .dropdown:hover{
+	background-color: #FFFFFF;
+}
+.header .nav .dropdown:hover .dropdown-content{
+    opacity: 1;
+    display: block;
+    z-index: 999;
+}
+/*ie7,8瀵艰埅涓嬫媺鍒楄〃鍑虹幇*/
+.dropdown-content{
+	display: none;
+}
+#menu{
+	display: none;
+}
+.college_view .college_view_img IMG{
+	height: 68%;
+}
+.college_view .college_view_ul LI{
+	margin-right: 1%;
+}
+.header .logo IMG{
+	margin-top: 0;
+}
+.dropdown-content{
+	display: none;
+}
+.dropdown:hover ul{
+	display: block;
+}
+.header2 img{
+	height: 300px;
+}
+.nav{
+	width: 80%;
+}
+.title{
+	left:32%;
+}
+.title span{
+	margin: 0 -50%;
+}
+.academic_content I{
+	left:30%;
+	top:26%;
+}
+.recruit_content I{
+	top:26%;
+	left:33%;
+}
+.mr_frul ul li a img{
+	width:100%;
+	height:auto;
+	left:0;
+}
+.header2 img{
+	width:auto;
+}
