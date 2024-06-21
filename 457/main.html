@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Music</title>
+    <style>
+        #background-music {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" src="1.mp3" loop></audio>
+
+    <script>
+        window.onload = function() {
+            var audio = document.getElementById("background-music");
+            audio.play();
+        };
+    </script>
+
+    <!-- Page content goes here -->
+</body>
+</html>
